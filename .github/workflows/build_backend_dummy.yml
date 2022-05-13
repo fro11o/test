@@ -1,0 +1,14 @@
+name: Build backend dummy
+on:
+  pull_request:
+    branches: [ master ]
+    paths:
+      - '*'
+      - '!backend/*'
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build backend dummy"
+

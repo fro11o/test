@@ -1,0 +1,14 @@
+name: Build frontend dummy
+on:
+  pull_request:
+    branches: [ master ]
+    paths:
+      - '*'
+      - '!frontend/*'
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build frontend dummy"
+
