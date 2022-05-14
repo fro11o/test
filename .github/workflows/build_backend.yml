@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [ master ]
     paths:
-      - 'backend/*'
+      - 'backend/**'
 
 jobs:
   check-bats-version:

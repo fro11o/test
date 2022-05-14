@@ -2,9 +2,8 @@ name: Build backend dummy
 on:
   pull_request:
     branches: [ master ]
-    paths:
-      - '*'
-      - '!backend/*'
+    paths-ignore:
+      - 'backend/**'
 
 jobs:
   check-bats-version:
